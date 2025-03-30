@@ -1,0 +1,35 @@
+📌 Why is Factory Like This?
+Factory Centralizes Object Creation
+You don’t directly instantiate objects (new Bus(), new Cab()), instead, the factory does it.
+This hides the logic of object creation from the client.
+Factory Doesn't Allow Changing Behavior at Runtime
+Once TransportationFactory.getTransportation("BUS") returns a Bus object, you can’t change it to a Cab or Bicycle.
+Factory is Useful When:
+You need to create objects based on some condition.
+You don’t want clients to know the exact class names.
+
+
+📌 Why is Strategy Like This?
+Strategy Allows Changing Behavior at Runtime
+You can set a different strategy dynamically (context.setStrategy(new Cab());).
+This means you don’t need to create a new object every time you want to change behavior.
+Strategy Focuses on Behavior, Not Creation
+The client already has the objects (new Bus(), new Cab()) and just swaps them as needed.
+Strategy is Useful When:
+You need to switch behaviors dynamically.
+You don’t want multiple object creations (just reuse different strategies).
+🛠 When to Use What?
+
+Use Case	Factory Pattern 🏭	Strategy Pattern 🎭
+You need a centralized place for object creation	✅ Yes	❌ No
+You want to encapsulate behavior changes	        ❌ No	✅ Yes
+Object’s behavior should be fixed once created	    ✅ Yes	❌ No
+Behavior should be dynamic & changeable at runtime	❌ No	✅ Yes
+Avoiding new keyword in client code	                ✅ Yes	❌ No
+Reusing the same objects with different behaviors	❌ No	✅ Yes
+
+If you need to create different objects based on some condition → use Factory
+If you need to change the object's behavior at runtime → use Strategy
+🔥 Factory is about WHAT object to create.
+🎭 Strategy is about HOW an object should behave.
+
