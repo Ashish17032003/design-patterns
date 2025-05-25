@@ -1,4 +1,4 @@
-package FactoryPattern;
+package CreationalDesignPatterns.FactoryPattern;
 
 public class Circle implements Shape{
     @Override

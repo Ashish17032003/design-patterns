@@ -1,4 +1,4 @@
-package FactoryPattern;
+package CreationalDesignPatterns.FactoryPattern;
 
 public class MainClass {
     public static void main(String[] args) {
