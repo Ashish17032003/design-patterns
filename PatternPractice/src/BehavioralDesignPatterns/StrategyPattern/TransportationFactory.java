@@ -1,4 +1,4 @@
-package StrategyPattern;
+package BehavioralDesignPatterns.StrategyPattern;
 
 public class TransportationFactory {
     public static Transportation getTransportation(String type) {
