@@ -22,7 +22,6 @@ public class Playlist {
                 return new ShuffledPlaylistIterator(this);
             default:
                 return null;
-        }
     }
     public ArrayList<String> getSongs() {
         return songs;
