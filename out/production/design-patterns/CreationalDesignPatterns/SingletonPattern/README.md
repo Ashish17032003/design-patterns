@@ -76,14 +76,12 @@ The solution is to make the Singleton instance creation process thread-safe. Her
    Here’s how we can apply synchronization:
 ```Java
 1. public class Logger {
-2  private static volatile Logger
-3      instance; // volatile keyword ensures visibility across threads
+2  private static volatile Logger instance; // volatile keyword ensures visibility across threads
 4  private Logger() {} // Private constructor to prevent instantiation
 5
 6  public static Logger getInstance() {
 7    if (instance == null) { // First check (no synchronization needed here)
-8      synchronized (
-9          Logger.class) { // Synchronize only when creating the instance
+8      synchronized (Logger.class) { // Synchronize only when creating the instance
 10        if (instance == null) { // Second check (inside synchronized block)
 11          instance = new Logger(); // Create the instance if it's still null
 12        }

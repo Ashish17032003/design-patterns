@@ -175,11 +175,4 @@ public class FactoryDemo {
 ```
 
 
-#### Why is the CarBuilder Static?
-1. No Need for Car Instance:
-   The CarBuilder doesn't need an instance of Car to create a new one, so it’s made static. You can use the builder without creating a Car object first.
-2. Efficiency:
-   It avoids unnecessary object creation. You don't need to instantiate Car just to use the builder.
-   3.Simpler Usage:
-   The static builder allows clients to create a Car object directly with Car.CarBuilder() without needing a separate builder instance.
 
