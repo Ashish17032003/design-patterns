@@ -1,4 +1,4 @@
-package Observer;
+package BehavioralDesignPatterns.Observer;
 
 public class ObserverPatternDemo {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class ObserverPatternDemo {
         channel.register(user1);
         channel.register(user2);
 
-        channel.uploadVideo("Observer Pattern in Java!");
+        channel.uploadVideo("BehavioralDesignPatterns.Observer Pattern in Java!");
 
         // Bob unsubscribes
         channel.unregister(user2);
