@@ -1,5 +1,7 @@
-package Decorator;
+package StructuralDesignPatterns.Decorator;
 
+
+import StructuralDesignPatterns.Decorator.BasePizza;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,9 +1,9 @@
-package Decorator;
+package StructuralDesignPatterns.Decorator;
 
-public class Mushroom extends ToppingDecorator{
+public class ExtraCheese extends ToppingDecorator {
     BasePizza basePizza;
 
-    public Mushroom(BasePizza pizza) {
+    public ExtraCheese(BasePizza pizza) {
         this.basePizza = pizza;
     }
 

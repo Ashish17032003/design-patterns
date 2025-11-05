@@ -1,4 +1,6 @@
-package Decorator;
+package StructuralDesignPatterns.Decorator;
+
+import StructuralDesignPatterns.Decorator.BasePizza;
 
 public class VegDelight extends BasePizza {
     @Override
